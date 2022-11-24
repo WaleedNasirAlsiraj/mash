@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(23, 32, 21);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content{
+    max-width: 1100px;
+    padding: 100px;
+    font-size: 30px;
+}
+
+.red{
+    color: red;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.layer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    animation: blink 0.1s infinite;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   pointer-events: none;
+}
+
+.terminal-cursor{
+    animation: cursor 0.8s infinite;
+}
+
+.nav{
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+a:hover{
+    color:rgb(113, 113, 113);
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+input{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 200px;
+    color: black;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+.small{
+    font-size: 18px;
+}
+
+h2{
+    font-weight: 400;
+}
+
+.email{
+    width: 420px;
+}
+
+textarea{
+    resize: none;
+    width: 820px;
+    height: 100px;
+    outline: none;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+button{
+    all: unset;
+    background-color: white;
+    font-size: 30px;
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes cursor{
+    0%{
+        opacity: 0%;
+    }
+    30%{
+        opacity: 100%;
+    }
+    70%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity: 80%;
+    }
+    50%{
+        opacity: 90%;
+    }
+    100%{
+        opacity: 80%;
+    }
+}
