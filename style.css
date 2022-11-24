@@ -138,3 +138,15 @@ button{
         opacity: 80%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+  .content{
+      padding: 20px;
+    }
+   .name{
+       flex-direction: column;
+    }
+    textarea{
+        width: 200px;
+    }
+}
